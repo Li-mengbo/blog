@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 老友
+title: 無畏
 subtitle:
 description: 编程不是为了钱，只因纯粹的乐趣。
-keywords:
+keywords: 李梦博
 author: 李梦博
 language: zh-Hans
 timezone:
@@ -15,7 +15,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 
 # Directory
