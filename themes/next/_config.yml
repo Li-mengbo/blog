@@ -46,6 +46,13 @@ footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
   #since: 2015
+  ages:
+    # site running time
+    enable: true
+    # birthday of your site
+    birthday: 20181001
+    # color of number
+    color: "#1890ff"
 
   # Icon between year and copyright info.
   icon: user
@@ -80,6 +87,21 @@ seo: false
 # If true, will add site-subtitle to index page, added in main hexo config.
 # subtitle: Subtitle
 index_with_subtitle: false
+
+# a trick on website title
+# tab标签切换
+title_trick:
+  enable: true
+  leave: "(つェ⊂)我藏好了哦~"
+  enter: "(*´∇｀*) 被你发现啦~"
+# 边缘波动
+wobble:
+  enable: true  # 是否开启边缘波动效果
+  radius: 50  # 波动半径
+  offset: 100
+  sidebar: false  # 开启侧边栏边缘摆动
+  header: false  # 开启头部边缘摆动
+  footer: true  # 开启脚部边缘摆动
 
 
 # ---------------------------------------------------------------

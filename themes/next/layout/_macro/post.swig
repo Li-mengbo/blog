@@ -363,7 +363,7 @@
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
           {% for tag in post.tags %}
-            <a href="{{ url_for(tag.path) }}" rel="tag"><img src="https://img.icons8.com/windows/32/000000/tags.png" style="width: 16px;display: inline-block;vertical-align: middle;"> {{ tag.name }}</a>
+            <a href="{{ url_for(tag.path) }}" rel="tag"><i class="fa fa-tags"></i> {{ tag.name }}</a>
           {% endfor %}
         </div>
       {% endif %}

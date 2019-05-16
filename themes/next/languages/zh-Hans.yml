@@ -48,6 +48,7 @@ page:
 footer:
   powered: "由 %s 强力驱动"
   theme: 主题
+  age: 我已在此等候你
 
 counter:
   tag_cloud:
