@@ -838,3 +838,6 @@ version: 5.1.4
 
 passage_end_tag:
   enabled: true
+# busuanzi
+busuanzi: true
+busuanzi_site_offset: 10000
