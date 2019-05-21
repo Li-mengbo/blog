@@ -35,7 +35,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "李梦博"
+keywords: 李梦博,Hexo,博客,前端
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -45,12 +45,12 @@ rss: /atom.xml
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  #since: 2015
+  since: 2017
   ages:
     # site running time
     enable: true
     # birthday of your site
-    birthday: 20181001
+    birthday: 20170501
     # color of number
     color: "#1890ff"
 
@@ -61,13 +61,13 @@ footer:
   copyright:
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
-  powered: true
+  powered: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
-    enable: true
+    enable: false
     # Version info of NexT after scheme info (vX.X.X).
-    version: true
+    version: false
   # -------------------------------------------------------------
   # Any custom text can be defined here.
   #custom_text: Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
@@ -92,15 +92,15 @@ index_with_subtitle: false
 # tab标签切换
 title_trick:
   enable: true
-  leave: "(つェ⊂)我藏好了哦~"
-  enter: "(*´∇｀*) 被你发现啦~"
+  leave: "(つェ⊂)不要离开我~"
+  enter: "(*´∇｀*) 你又回来啦~"
 # 边缘波动
 wobble:
   enable: true  # 是否开启边缘波动效果
   radius: 50  # 波动半径
-  offset: 100
+  offset: 0
   sidebar: false  # 开启侧边栏边缘摆动
-  header: false  # 开启头部边缘摆动
+  header: true  # 开启头部边缘摆动
   footer: true  # 开启脚部边缘摆动
 
 
@@ -134,8 +134,8 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Pisces
-#scheme: Mist
+#scheme: Muse
+scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
 
@@ -218,10 +218,10 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
-  onmobile: false
+  onmobile: true
 
 
 # ---------------------------------------------------------------
@@ -286,6 +286,7 @@ post_copyright:
 mobile_layout_economy: false
 
 # Android Chrome header panel color ($black-deep).
+# Android 上 Chrome 浏览器顶部颜色设置
 android_chrome_color: "#222"
 
 # Custom Logo.
@@ -583,6 +584,9 @@ busuanzi_count:
   site_pv_header: <i class="fa fa-eye"></i>
   site_pv_footer:
   # custom pv span for one page only
+  # 页面浏览量，不建议开启，建议用上面的 leancloud_visitors
+  # 首先 leancloud 更稳定，其次 leancloud 便于管理
+  # 最后，可以利用 leancloud 的 api 建立 TopX 页面
   page_pv: true
   page_pv_header: <i class="fa fa-file-o"></i>
   page_pv_footer:
