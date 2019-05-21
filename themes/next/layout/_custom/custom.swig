@@ -83,3 +83,7 @@
     }
   </script>
 {% endif %}
+{# Tidio 在线联系功能 #}
+{% if theme.tidio.enable %}
+  <script async src="//code.tidio.co/{{ theme.tidio.key }}.js"></script>
+{% endif %}

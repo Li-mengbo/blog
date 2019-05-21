@@ -119,6 +119,7 @@ menu:
   标签: /tags/ || tags
   分类: /categories/ || th
   归档: /archives/ || archive
+  top: /top/ || signal
   #搜素: /search/ || search
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -845,3 +846,9 @@ passage_end_tag:
 # busuanzi
 busuanzi: true
 busuanzi_site_offset: 10000
+
+# Tidio online chat
+# see: https://www.tidiochat.com
+tidio:
+  enable: true
+  key:  nn5ibli7apjxjny7wjy80rbi3fccv5m9
