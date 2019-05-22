@@ -404,9 +404,9 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
+  enable: ture
+  appid:  61KLJc1DIk0r9IYt5S9tSaW3-gzGzoHsz
+  appkey:  Fwxfx8FXr48hlHy5BriSaIhP
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # comment box placeholder
@@ -549,8 +549,8 @@ vkontakte_api:
 # Star rating support to each article.
 # To get your ID visit https://widgetpack.com
 rating:
-  enable: false
-  id:     #<app_id>
+  enable: true
+  id: 18677
   color:  fc6423
 # ---------------------------------------------------------------
 
@@ -852,3 +852,10 @@ busuanzi_site_offset: 10000
 tidio:
   enable: true
   key:  nn5ibli7apjxjny7wjy80rbi3fccv5m9
+# 相关文章推荐
+related_posts:
+  enable: true
+  title:  # custom header, leave empty to use the default one
+  display_in_home: false
+  params:
+    maxCount: 5
