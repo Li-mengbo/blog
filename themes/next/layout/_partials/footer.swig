@@ -2,7 +2,7 @@
 #}{% set current = date(Date.now(), "YYYY") %}{#
 #}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} &mdash; {% endif %}{#
 #}<span itemprop="copyrightYear">{{ current }}</span>
-  <span class="with-love">
+  <span class="with-love" id="heart">
     <i class="fa fa-{{ theme.footer.icon }}"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright || config.author }}</span>
@@ -24,11 +24,11 @@
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <div>
     <span id="busuanzi_container_site_pv" style='display:none'>
-        历经 <span id="busuanzi_value_site_pv"></span> 次回眸才与你相遇
+        历经 <span id="busuanzi_value_site_pv" style="color:{{ theme.footer.ages.color }}"></span> 次回眸才与你相遇
         <span class="post-meta-divider">|</span>
     </span>
     <span id="busuanzi_container_site_uv" style='display:none'>
-        我的第<span id="busuanzi_value_site_uv"></span>位朋友
+        我的第<span id="busuanzi_value_site_uv" style="color:{{ theme.footer.ages.color }}"></span>位朋友
     </span>
   </div>
   <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>

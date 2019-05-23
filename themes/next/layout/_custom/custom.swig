@@ -1,7 +1,7 @@
 {# 页脚站点运行时间统计 #}
 {% if theme.footer.ages.enable %}
-  <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/moment-precise-range-plugin@1.3.0/moment-precise-range.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/moment-precise-range-plugin@1.3.0/moment-precise-range.min.js"></script>
   <script>
     function timer() {
       var ages = moment.preciseDiff(moment(),moment({{ theme.footer.ages.birthday }},"YYYYMMDD"));
@@ -54,6 +54,7 @@
             movementLeft: false,
             movementRight: false,
             debug: false,
+            bodyColor: 'linear-gradient(90deg,#f79533 0,#f37055 15%,#ef4e7b 30%,#a166ab 44%,#5073b8 58%,#1098ad 72%,#07b39b 86%,#6dba82 100%)'
           });
         {% endif %}
 
@@ -86,4 +87,13 @@
 {# Tidio 在线联系功能 #}
 {% if theme.tidio.enable %}
   <script async src="//code.tidio.co/{{ theme.tidio.key }}.js"></script>
+{% endif %}
+{# 打字特效 #}
+{% if theme.typing_effect %}
+  <script src="//script-1256884783.file.myqcloud.com/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = {{ theme.typing_effect.colorful }};
+    POWERMODE.shake = {{ theme.typing_effect.shake }};
+    document.body.addEventListener('input', POWERMODE);
+  </script>
 {% endif %}

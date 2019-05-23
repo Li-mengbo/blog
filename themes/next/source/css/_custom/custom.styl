@@ -37,6 +37,7 @@ if hexo-config('wobble')  {
   //Next.Muse中为Header和Footer添加背景色
   #header, #footer {
     background-color: rgb(245, 245, 245);
+    // background: linear-gradient(90deg,#f79533 0,#f37055 15%,#ef4e7b 30%,#a166ab 44%,#5073b8 58%,#1098ad 72%,#07b39b 86%,#6dba82 100%);
   }
 
   //防止sidebar和footer同时开启动效时堆叠异常
@@ -83,4 +84,17 @@ if hexo-config('wobble')  {
 
 .sidebar {
   left: 0px;
+}
+// 自定义页脚跳动的心样式
+@keyframes heartAnimate {
+    0%,100%{transform:scale(1);}
+    10%,30%{transform:scale(0.9);}
+    20%,40%,60%,80%{transform:scale(1.1);}
+    50%,70%{transform:scale(1.1);}
+}
+#heart {
+    animation: heartAnimate 1.33s ease-in-out infinite;
+}
+.with-love {
+    color: rgb(255, 113, 168);
 }

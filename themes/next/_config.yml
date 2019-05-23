@@ -55,7 +55,7 @@ footer:
     color: "#1890ff"
 
   # Icon between year and copyright info.
-  icon: user
+  icon: heart
 
   # If not defined, will be used `author` from Hexo main config.
   copyright:
@@ -135,8 +135,8 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Muse
-scheme: Mist
+scheme: Muse
+#scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
 
@@ -859,3 +859,7 @@ related_posts:
   display_in_home: false
   params:
     maxCount: 5
+# typing effect
+typing_effect:
+  colorful: true  # 礼花特效
+  shake: false  # 震动特效
